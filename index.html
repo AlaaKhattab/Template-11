@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <!----------------------------------------------------------------------------------->
+    <!--------------------------------  Head  ------------------------------------------->
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to Green Line">
+        <title>Green Line</title>
+        
+        <!-------------------------  CSS  ------------------------------->
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        
+        <style></style>
+        
+        <!----------------------  JavaScript  --------------------------->
+        <script></script>
+        
+    </head>
+    
+    
+    <!----------------------------------------------------------------------------------->
+    <!--------------------------------  Body  ------------------------------------------->
+    <body style="background-image: url(images/background2.jpg);background-size: cover; background-attachment:fixed;background-repeat:no-repeat;">
+        <div class="container">
+            <div class="links">
+                <a href="#">Register</a>
+                <a href="#">Client Login</a>
+            </div>
+            <br><br>
+            <!--------------------------------------------------------------->
+            <!-------------------------  Header  ---------------------------->
+            <div class="header">
+
+                <!------------- logo  --------------->
+                <div class="logo">
+                    <img src="images/logo3.png" alt="Logo">
+                    <p>800-555-5555</p>
+                </div>
+                <!------------- login  -------------->
+                <div class="login">
+                <h2>Northen Colorado Real State, News &amp; Events</h2>
+                    <form>
+                        <label>Subscribe to our newsletter for everything NoCo.</label>
+                        <input type="text" name="name" placeholder="Your Name...">
+                        <input type="email" name="email" placeholder="Your Email...">
+                        <input type="submit" name="ok" value="Ok">
+
+                    </form>
+                </div>
+
+
+
+            </div>
+
+
+            <!--------------------------------------------------------------->
+            <!-----------------------  Navigation  -------------------------->
+            <div class="nav">
+                <ul>
+                    <li><a href="#" style="color: #1AA6B7;">Home</a></li>
+                    <li><a href="package.html">Packages</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <!--------------------------------------------------------------->
+            <!-----------------------  Slide Show  -------------------------->
+
+            <div class="slideShow">
+                <div class="slider">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/slideShow/images/1.jpg" alt="slideshow">
+                </div>
+
+                <div class="slider">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/slideShow/images/2.jpg" alt="slideshow">
+                </div>
+
+                <div class="slider">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/slideShow/images/3.jpg" alt="slideshow">
+                </div>
+
+                <div class="slider">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/slideShow/images/4.jpg" alt="slideshow">
+                </div>
+
+                <div class="slider">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/slideShow/images/5.jpg" alt="slideshow">
+                </div>
+
+                <div class="slider">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/slideShow/images/6.jpg" alt="slideshow">
+                </div>
+
+                <div class="slider">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/slideShow/images/7.jpg" alt="slideshow">
+                </div>
+
+                <div class="slider">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images/slideShow/images/8.jpg" alt="slideshow">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("slider");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }    
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                    }
+                </script>
+
+            </div>
+
+
+
+
+            <!--------------------------------------------------------------->
+            <!-----------------------  Packages  ---------------------------->
+            <h2 class="packagesTitle">Packages</h2>
+            <div class="packages">
+
+                <div class="img_text">
+                    <img class="block" src="images/FirstPackage.jpg">
+                    <p class="block">Package 1 description text description text description text </p>
+                </div>
+
+
+                <div class="img_text">
+                    <img class="block" src="images/SecondPackage.jpg">
+                    <p class="block">Package 2 description text description text description text </p>
+                </div>
+
+                <div class="img_text">
+                    <img class="block" src="images/ThirdPackage.jpg">
+                    <p class="block">Package 3 description text description text description text </p>
+                </div>
+                <!--
+                <div class="img_text">
+                    <img class="block" src="images/FourthPackage.jpg">
+                    <p class="block">Package 4 description text</p>
+                </div>   -->
+            </div>
+
+            <form class="more">
+                <!---<input type="button" name="more" value="More" style="background-image: url(images/arrow.jpg); background-size: cover;">--->
+                <input type="button" name="more" value="More">
+            </form>
+
+
+
+
+            <!--------------------------------------------------------------->
+            <!-----------------------  Book Now  ---------------------------->
+
+            <div class="book">
+                <form>
+                    <input type="button" name="book" value="Book Now">
+                </form>
+            </div>
+
+
+
+            <!--------------------------------------------------------------->
+            <!-----------------------  Footer  ------------------------------>
+            <div class="footer">
+                <!------------- logo  --------------->
+                <img src="images/logo3.png" class="logo">
+
+
+                <!------------- About  --------------->
+                <div class="footerAbout">
+                    <h2>About Company</h2>
+                    <p>xxxxxxxxxxxxxxxxxxxxxxxxxx
+                       xxxxxxxxxxxxxxxxxxxxxxxxxx
+                       xxxxxxxxxxxxxxxxxxxxxxxxxx
+                       xxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                </div>
+
+                <!------------- Tags  ---------------->
+                <div class="footerTags">
+                    <h2>Tags</h2>
+                    <p>xxxxxxxxxxx
+                       xxxxxxxxxxx
+                       xxxxxxxxxxx
+                       xxxxxxxxxxx</p>
+                </div>
+
+
+
+
+                <!------------- Contact  ------------->
+                <div class="footerContact">
+                    <h3>Connect with Us</h3>
+                    <a href="#"><img src="images/Facebook.png" width="50" height="50"></a>
+                    <a href="#"><img src="images/twitter.png" width="50" height="50"></a>
+                    <a href="#"><img src="images/Linkedin.png" width="50" height="50"></a>
+                    <a href="#"><img src="images/rss.png" width="50" height="50"></a>
+                    <a href="#"><img src="images/larg%20mail.png" width="50" height="50"></a>
+                </div>
+
+
+            </div>
+            <div class="copyright">
+                <p> Copy Rights <span style="color: #FE424D;"> &copy; </span> Aalaa Khattab 2017</p>
+            </div>
+        </div>
+    </body>
+    
+</html>
